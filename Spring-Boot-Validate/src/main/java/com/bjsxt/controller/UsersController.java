@@ -44,6 +44,7 @@ public class UsersController {
     @PostMapping("/save")
     public String insert(@ModelAttribute("user") @Valid User user, BindingResult result) {
         if (result.hasErrors()) {
+            System.out.println("nihao");
             return "add";
         }
         user.setPassword(SecureUtil.md5(user.getPassword()));
