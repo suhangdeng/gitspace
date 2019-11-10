@@ -1,0 +1,15 @@
+#tomcat端口号
+server:
+  port: 80
+#spring管理数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 592613480
+    type: com.alibaba.druid.pool.DruidDataSource
+#加载mybatis的xml配置文件
+mybatis:
+  mapper-locations: com/bjsxt/mapper/*.xml
+  type-aliases-package: com.bjsxt.pojo
