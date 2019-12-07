@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: eureka-server # 服务的名称
+---
+spring:
+  profiles: peer1
+server:
+  port: 8100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9100/eureka/
+  instance:
+    instance-id: ${eureka.instance.ip-address}:${server.port}:${spring.application.name}
+---
+spring:
+  profiles: peer2
+server:
+  port: 9100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8100/eureka/
+  instance:
+    instance-id: ${eureka.instance.ip-address}:${server.port}:${spring.application.name}

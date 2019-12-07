@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order-consumer
+server:
+  port: 8082
+#myspcloud:
+  #item:
+  #  url: http://127.0.0.1:8081/item/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:9100/eureka/  #注册中心地址
+      ###因为是eureka的客户端，所以需要将自己注册到注册中心，默认为true
+    register-with-eureka: true
+    fetch-registry: true
+#开启hystrix断路器
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microsrvice-api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microsrvice-api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-microservice-item" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-microservice-item/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-microservice-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-microservice-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-mircoservice-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-mircoservice-order/src/main/java" charset="UTF-8" />
+  </component>
+</project>
